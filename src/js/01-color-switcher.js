@@ -1,21 +1,21 @@
 
-btnStart = document.querySelector('[data-start]');
+btnStartRef = document.querySelector('[data-start]');
 btnStop = document.querySelector('[data-stop]');
 bodyColor = document.querySelector('body');
 btnStopDesabled(true);
 //  i have idea to make throught switch and flag
 // btnStart.dataset.value = ""
-btnStart.addEventListener('click',(e)=> {
+btnStartRef.addEventListener('click',()=> {
     btnStartDesabled(true);
     btnStopDesabled(false);
  
 
-     timerId = setInterval(() =>{
+    timerId = setInterval(() =>{
         bodyColor.style.backgroundColor = getRandomHexColor() ;
-     }, 900);
+    }, 900);
 });
 
-btnStop.addEventListener('click',(e)=>{
+btnStop.addEventListener('click',()=>{
    btnStopDesabled(true);
    btnStartDesabled(false)
     clearInterval(timerId);
@@ -29,4 +29,4 @@ function btnStopDesabled(flag){
 }
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
- }
+}
