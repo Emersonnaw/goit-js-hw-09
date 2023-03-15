@@ -3,6 +3,7 @@ const btnStartRef = document.querySelector('[data-start]');
 const btnStop = document.querySelector('[data-stop]');
 const bodyColor = document.querySelector('body');
 btnStopDesabled(true);
+let timerId = null;
 //  i have idea to make throught switch and flag
 // btnStart.dataset.value = ""
 btnStartRef.addEventListener('click', () => {
@@ -10,7 +11,7 @@ btnStartRef.addEventListener('click', () => {
     btnStopDesabled(false);
  
 
-  const  timerId = setInterval(() =>{
+  timerId = setInterval(() =>{
         bodyColor.style.backgroundColor = getRandomHexColor() ;
     }, 900);
 });
