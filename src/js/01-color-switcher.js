@@ -1,11 +1,11 @@
 
-btnStartRef = document.querySelector('[.data-start]');
-btnStop = document.querySelector('[data-stop]');
-bodyColor = document.querySelector('body');
+const btnStartRef = document.querySelector('[data-start]');
+const btnStop = document.querySelector('[data-stop]');
+const bodyColor = document.querySelector('body');
 btnStopDesabled(true);
 //  i have idea to make throught switch and flag
 // btnStart.dataset.value = ""
-btnStartRef.addEventListener('click',()=> {
+btnStartRef.addEventListener('click', () => {
     btnStartDesabled(true);
     btnStopDesabled(false);
  
@@ -22,7 +22,7 @@ btnStop.addEventListener('click',()=>{
 });
 
 function btnStartDesabled(flag){
-    btnStart.disabled = flag;
+    btnStartRef.disabled = flag;
 }
 function btnStopDesabled(flag){
     btnStop.disabled = flag;
