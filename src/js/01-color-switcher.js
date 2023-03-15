@@ -1,6 +1,6 @@
 
-btnStart = document.querySelector("[data-start]"),
-btnStop = document.querySelector('[data-stop]'),
+btnStart = document.querySelector('[data-start]');
+btnStop = document.querySelector('[data-stop]');
 bodyColor = document.querySelector('body');
 btnStopDesabled(true);
 //  i have idea to make throught switch and flag
