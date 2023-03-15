@@ -83,7 +83,7 @@ const {delay, step, amount} = e.currentTarget.elements;
 const delayValue = delay.valueAsNumber;
 const stepValue = step.valueAsNumber;
 const amountValue = amount.valueAsNumber;
-for(let i = 0; i <= amountValue; i+=1){
+for(let i = 0; i < amountValue; i+=1){
   const delay = i * stepValue + delayValue;
   createPromise(i, delay).then(({ position, delay }) => {
    //console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
