@@ -100,8 +100,4 @@ function startTimer() {
       refs.hours.textContent = hours;
       refs.minutes.textContent = minutes;
       refs.seconds.textContent = seconds;
-
-  
-
-
 }

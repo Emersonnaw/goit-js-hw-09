@@ -8,7 +8,7 @@ btnStopDesabled(true);
 btnStart.addEventListener('click',(e)=> {
     btnStartDesabled(true);
     btnStopDesabled(false);
-   // console.log(btnStart.dataset = "AL");
+ 
 
      timerId = setInterval(() =>{
         bodyColor.style.backgroundColor = getRandomHexColor() ;
@@ -21,14 +21,13 @@ btnStop.addEventListener('click',(e)=>{
    btnStartDesabled(false)
     clearInterval(timerId);
 });
+
 function btnStartDesabled(flag){
     btnStart.disabled = flag;
 }
 function btnStopDesabled(flag){
     btnStop.disabled = flag;
 }
-
-
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
  }
