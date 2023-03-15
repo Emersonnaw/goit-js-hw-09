@@ -1,5 +1,5 @@
 
-btnStartRef = document.querySelector('[data-start]');
+btnStartRef = document.querySelector('[.data-start]');
 btnStop = document.querySelector('[data-stop]');
 bodyColor = document.querySelector('body');
 btnStopDesabled(true);
