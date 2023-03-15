@@ -10,7 +10,7 @@ btnStartRef.addEventListener('click', () => {
     btnStopDesabled(false);
  
 
-    timerId = setInterval(() =>{
+  const  timerId = setInterval(() =>{
         bodyColor.style.backgroundColor = getRandomHexColor() ;
     }, 900);
 });
